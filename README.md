@@ -25,7 +25,7 @@ The project implements an **18-layer CNN** that processes 32x32 color images fro
 
 The process starts with image normalization, followed by a series of convolution, ReLU, and max pooling layers. A final fully connected layer condenses the features into a vector of 10 values, which the softmax layer then converts into class probabilities.
 
-### Performance Evaluation 📊
+### Performance Evaluation
 
 The performance of the CNN was evaluated by:
 * Classifying all 10,000 test images from the provided dataset.
