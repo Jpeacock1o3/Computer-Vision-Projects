@@ -1,0 +1,26 @@
+% Load and display images
+%figure;
+%imshow('im1corrected.jpg');
+%title('Select at least 8 points in Image 1');
+%[x1, y1] = ginput(8);
+%img1
+%figure;
+%imshow('im2corrected.jpg');
+%title('Select corresponding points in Image 2');
+%[x2, y2] = ginput(8);
+
+% Combine points into Nx2 matrices
+points1 = [x1, y1];
+points2 = [x2, y2];
+
+%If you want the epipolar image for 
+F_norm = eightpoint(img1, img2, points1, points2);
+disp("normalized matrix");
+disp(F_norm);
+
+%F_non = eightpointnohartley(img1, img2, points1, points2);
+%disp("Non normalized F matrix");
+%disp(F_non);
+
+
+

@@ -1,0 +1,8 @@
+% Compute F
+F_5 = computeFundamentalMatrixFromCalibration(Kv1,Kv2,Rv1,Rv2,Cv1,Cv2);
+disp(F_5);
+% Define some example points in Image 1 and their correspondences in Image 2
+ % Example points in Image 2
+
+% Plot the epipolar lines
+plotEpipolarLines(F_5, 'im1corrected.jpg', 'im2corrected.jpg', points1, points2);
